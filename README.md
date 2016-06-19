@@ -9,7 +9,17 @@ npm install
 npm run ios
 ```
 
+### Dependencies
+[react-router-native](https://github.com/jmurzy/react-router-native)
+
+[react-router](https://github.com/reactjs/react-router)
+
+[react-router-relay](https://github.com/relay-tools/react-router-relay)
+
+[relay](https://github.com/facebook/relay)
+
+[graphql](https://github.com/graphql/graphql-js)
+
+
 ### Credits
 [taion/relay-todomvc](https://github.com/taion/relay-todomvc)
-[jmurzy/react-router-native](https://github.com/jmurzy/react-router-native)
-[facebook/relay](https://github.com/facebook/relay)
