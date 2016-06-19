@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "scripts": {
+    "ios": "react-native run-ios",
+    "start": "react-native start --reset-cache",
+    "update-schema": "babel-node plugins/updateSchema.js"
+  },
+  "dependencies": {
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "buffer": "^4.6.0",
+    "file-loader": "^0.8.5",
+    "graphql": "^0.6.0",
+    "graphql-relay": "^0.4.2",
+    "keycode": "^2.1.1",
+    "react": "^15.1.0",
+    "react-native": "0.28.0-rc.0",
+    "react-relay": "^0.9.0",
+    "react-router": "3.0.0-alpha.1",
+    "react-router-native": "git://github.com/joonhocho/react-router-native.git",
+    "react-router-relay": "^0.13.3",
+    "relay-local-schema": "^0.5.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react-native": "^1.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-relay-plugin": "^0.9.0",
+    "react-native-cli": "^1.0.0"
+  }
+}
