@@ -68,17 +68,12 @@ class TodoList extends React.Component {
   }
 
   render() {
-    console.group('TodoList.render');
-    console.log('TodoList', this);
-    console.log('status', this.props.status);
-    console.log('viewer', this.props.viewer);
-    console.log('todos', this.props.viewer.todos.edges.map(({node}) =>  node.id));
     const { numTodos, numCompletedTodos } = this.props.viewer;
     if (!numTodos) {
       return null;
     }
 
-    const element = (
+    return (
       <View style={styles.main}>
         <View style={styles.toggleRow}>
           <Switch
@@ -96,9 +91,6 @@ class TodoList extends React.Component {
         </View>
       </View>
     );
-    console.groupEnd('TodoList.render');
-
-    return element;
   }
 }
 

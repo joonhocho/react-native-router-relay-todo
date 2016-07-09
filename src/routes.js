@@ -1,5 +1,5 @@
 import React from 'react';
-import {IndexRoute, Route, StackRoute} from 'react-router-native';
+import {IndexRoute, Route} from 'react-router-native';
 
 import ViewerQueries from './queries/ViewerQueries';
 

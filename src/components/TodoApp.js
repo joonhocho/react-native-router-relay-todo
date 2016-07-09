@@ -50,11 +50,8 @@ class TodoApp extends React.Component {
 
   render() {
     const { viewer, children } = this.props;
-    console.group('TodoApp.render');
-    console.log('this', this);
-    console.log('viewer', this.props.viewer);
 
-    const element = (
+    return (
       <View style={styles.app}>
         <View style={styles.content}>
           <Text style={styles.header}>todos</Text>
@@ -68,10 +65,6 @@ class TodoApp extends React.Component {
         {children}
       </View>
     );
-
-    console.groupEnd('TodoApp.render');
-
-    return element;
   }
 }
 
