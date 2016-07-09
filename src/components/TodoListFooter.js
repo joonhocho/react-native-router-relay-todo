@@ -128,6 +128,10 @@ class TodoListFooter extends React.Component {
 }
 
 export default Relay.createContainer(TodoListFooter, {
+  initialVariables: {
+    limit: -1 >>> 1,
+  },
+
   prepareVariables() {
     return {
       limit: -1 >>> 1

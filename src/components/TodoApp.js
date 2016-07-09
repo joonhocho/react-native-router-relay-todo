@@ -36,6 +36,10 @@ class TodoApp extends React.Component {
     children: React.PropTypes.node.isRequired
   };
 
+  static contextTypes = {
+    router: React.PropTypes.object.isRequired,
+  };
+
   onNewTodoSave(text) {
     const { viewer } = this.props;
 
@@ -46,8 +50,11 @@ class TodoApp extends React.Component {
 
   render() {
     const { viewer, children } = this.props;
+    console.group('TodoApp.render');
+    console.log('this', this);
+    console.log('viewer', this.props.viewer);
 
-    return (
+    const element = (
       <View style={styles.app}>
         <View style={styles.content}>
           <Text style={styles.header}>todos</Text>
@@ -61,6 +68,10 @@ class TodoApp extends React.Component {
         {children}
       </View>
     );
+
+    console.groupEnd('TodoApp.render');
+
+    return element;
   }
 }
 
