@@ -1,0 +1,12 @@
+# --ignore-dir=ios
+# --ignore-dir=android
+--ignore-dir=assets
+--ignore-dir=build
+--ignore-dir=lib
+--ignore-dir=node_modules
+--ignore-file=match:.DS_Store
+--ignore-file=match:.ackrc
+--ignore-file=match:.eslintignore
+--ignore-file=match:.eslintrc
+--ignore-file=match:.gitignore
+--ignore-file=match:npm-debug.log

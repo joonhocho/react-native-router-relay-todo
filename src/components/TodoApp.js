@@ -36,6 +36,10 @@ class TodoApp extends React.Component {
     children: React.PropTypes.node.isRequired
   };
 
+  static contextTypes = {
+    router: React.PropTypes.object.isRequired,
+  };
+
   onNewTodoSave(text) {
     const { viewer } = this.props;
 

@@ -4,6 +4,7 @@ import {
   applyRouterMiddleware,
   Router,
   useRouterHistory,
+  nativeHistory,
 } from 'react-router-native';
 import useRelay from 'react-router-relay';
 import RelayLocalSchema from 'relay-local-schema';
@@ -20,8 +21,9 @@ Relay.injectNetworkLayer(
 export default () => (
   <Router
     addressBar
-    render={applyRouterMiddleware(useRelay)}
     environment={Relay.Store}
+    history={nativeHistory}
+    render={applyRouterMiddleware(useRelay)}
   >
     {routes}
   </Router>
